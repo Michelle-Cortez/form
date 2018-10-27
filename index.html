@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Advising Appointment Request</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h3>Advising Appointment Request: </h3>
+
+  <div class="container">
+    <form action="thankyou.html" method="get">
+      <fieldset>
+        <legend>
+          Enter Your Contact Information
+        </legend>
+        <label for="fName">
+          First Name:
+          <input id="fName" autofocus required type="text" name=fName placeholder="First Name">
+        </label>
+        <label for="lName">
+          Last Name:
+          <input id="lName" required type="text" name=lName placeholder="Last Name">
+        </label>
+        <label for="eMail">
+          Email:
+          <input id="eMail" required type="email" name="eMail" placeholder="Email">
+        </label>
+
+        <label for="advisor">
+          Select Advisor:
+          <select id="advisor" name="advisor">
+            <option value="Tiffany Ford">Tiffany Ford</option>
+            <option value="Kirsten Markley">Kirsten Markley</option>
+            <option value="Renee Riley">Renee Riley</option>
+          </select>
+        </label>
+
+        <label for="month"></label>
+        Select Month:
+        <select id="month" name="month">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August"></option>
+          <option value="September">October</option>
+          <option value="October">October</option>
+          <option value="November">Novemebr</option>
+          <option value="December">December</option>
+        </select>
+        <!-- I need to build a conditional statement for the day 31 days, 30 days or 28 days leap year 29 days -->
+
+        <label for="day"></label>
+        Select a Day:
+        <select id="day" name="day">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+         </select>
+<!-- I need to change this to a "text area iniput"-->
+         <label for="comments"></label>
+         Comments to Advisor:
+         <input id="comments" type="text" cols="40" rows="5" style="width:200px" name=comments value >
+
+
+      </fieldset>
+      <input class="submit" type="submit" value="Request Appointment">
+    </form>
+  </div>
+</body>
+
+</html>
